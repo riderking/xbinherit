@@ -10,33 +10,33 @@ var ClsA = xbClass.extend({
     }
 });
 
-var ClsB=ClsA.extend({
-	className:"ClsB",
-	ctor: function () {
-		this.ClsA$ctor();
-    },
-    methodA: function (args) {
-		this.ClsA$methodA(args);
-    }
-});
+var ClsB=ClsA.extend({<br/>
+	className:"ClsB",<br/>
+	ctor: function () {<br/>
+		this.ClsA$ctor();<br/>
+    },<br/>
+    methodA: function (args) {<br/>
+		this.ClsA$methodA(args);<br/>
+    }<br/>
+});<br/>
 
+<br/>
+var ClsC=ClsB.extend({<br/>
+ 	className:"ClsC",<br/>
+	ctor: function ( ) {<br/>
+		this.ClsB$ctor();<br/>
+<br/>
+    methodA: function (args) {<br/>
+		this.ClsB$methodA(args);<br/>
+    }<br/>
+});<br/>
+<br/>
 
-var ClsC=ClsB.extend({
- 		className:"ClsC",
-	ctor: function ( ) {
-		this.ClsB$ctor();
-    },
-    methodA: function (args) {
-		this.ClsB$methodA(args);
-    }
-});
-
-
-var a = new ClsA("xx");
+var a = new ClsA("xx");<br/>
 a.methodA("aa");
 
 var b = new ClsB("11","22");<br/>
 b.methodA("cc");
 
-var c = new ClsC("11","22");
+var c = new ClsC("11","22");<br/>
 c.methodA("cc");
