@@ -39,4 +39,4 @@ var b = new ClsB("11","22");
 b.methodA("cc");
 
 var c = new ClsC("11","22");
-c.methodA("cc");
+c.methodA("cc"); 
