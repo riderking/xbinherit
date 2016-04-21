@@ -2,33 +2,33 @@
   This is a smallest and easy debug javascirpt inherits implementation.
   
 # exapmle
-var ClsA = xbClass.extend({
-	className:"ClsA",
-	propA: 11,
-    methodA: function (args) {
-		this.propA=args;
-    }
-});
-
+var ClsA = xbClass.extend({<br/>
+&nbsp;&nbsp;className:"ClsA",<br/>
+&nbsp;&nbsp;propA: 11,<br/>
+&nbsp;&nbsp;methodA: function (args) {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;this.propA=args;<br/>
+&nbsp;&nbsp;}<br/>
+});<br/>
+<br/>
 var ClsB=ClsA.extend({<br/>
-	className:"ClsB",<br/>
-	ctor: function () {<br/>
-		this.ClsA$ctor();<br/>
-    },<br/>
-    methodA: function (args) {<br/>
-		this.ClsA$methodA(args);<br/>
-    }<br/>
+&nbsp;&nbsp;className:"ClsB",<br/>
+&nbsp;&nbsp;ctor: function () {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;this.ClsA$ctor();<br/>
+&nbsp;&nbsp;},<br/>
+&nbsp;&nbsp;methodA: function (args) {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;this.ClsA$methodA(args);<br/>
+&nbsp;&nbsp;}<br/>
 });<br/>
 
 <br/>
 var ClsC=ClsB.extend({<br/>
- 	className:"ClsC",<br/>
-	ctor: function ( ) {<br/>
-		this.ClsB$ctor();<br/>
-<br/>
-    methodA: function (args) {<br/>
-		this.ClsB$methodA(args);<br/>
-    }<br/>
+&nbsp;&nbsp;className:"ClsC",<br/>
+&nbsp;&nbsp;ctor: function ( ) {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;this.ClsB$ctor();<br/>
+&nbsp;&nbsp;}<br/>
+&nbsp;&nbsp;methodA: function (args) {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;this.ClsB$methodA(args);<br/>
+&nbsp;&nbsp;}<br/>
 });<br/>
 <br/>
 
