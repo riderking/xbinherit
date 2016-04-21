@@ -27,3 +27,4 @@ xbClass.extend = function (props,baseClass) {
 	};
 	return props["ctor"];
 }
+if(module && module.exports)module.exports=xbClass;
