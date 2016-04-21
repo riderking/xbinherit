@@ -2,7 +2,7 @@
   This is a smallest and easy debug javascirpt inherits implementation.
   
 # exapmle
-  var ClsA = xbClass.extend({
+ var ClsA = xbClass.extend({
 	className:"ClsA",
 	propA: 11,
     methodA: function (args) {
@@ -39,4 +39,4 @@ var b = new ClsB("11","22");
 b.methodA("cc");
 
 var c = new ClsC("11","22");
-c.methodA("cc"); 
+c.methodA("cc");
