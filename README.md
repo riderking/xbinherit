@@ -35,7 +35,7 @@ var ClsC=ClsB.extend({
 var a = new ClsA("xx");
 a.methodA("aa");
 
-var b = new ClsB("11","22");
+var b = new ClsB("11","22");<br/>
 b.methodA("cc");
 
 var c = new ClsC("11","22");
